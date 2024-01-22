@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google font Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <!-- Tailwind and Daisy UI info -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind custom color -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'button': '#FF4240',
+
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar styles-->
+        <div class="navbar bg-base-100 mx-auto px-28 py-12">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class=" font-extrabold text-4xl">Hockey<span class="text-button">'</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="text-button"><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-4 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <a class="btn bg-button px-6 py-4 text-white">Get Ticket</a>
+            </div>
+        </div>
+        <!-- Banner styles-->
+        <div class="carousel w-full mx-auto px-28 py-12">
+            <div id="slide1" class="carousel-item relative w-full ">
+                <img src="Images/1.png" class="w-full " />
+                <div
+                    class="absolute flex justify-items-start transform -translate-y-1/2 left-8 right-5 -bottom-0 gap-4 ">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+                    <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
+                </div>
+                <div class="absolute  bottom-10   right-14 rounded-3xl ml-2 bg-black text-white ">
+                    <div class="flex-col w-96 p-8 h-48  hover:bg-gray-400">
+                        <h2 class="font-semibold text-xl pb-4">Meet all the heroes from the field</h2>
+                        <p>Using algorithms, spreadsheets, statistics, and slide rules, I have determined the best ice
+                            hockey players ever. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+    <!-- Professional Hockeys Club styles -->
+        <section>
+            
+        </section>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
