@@ -14,6 +14,12 @@
         .font-manrope {
             font-family: "Manrope", sans-serif;
         }
+
+        @media screen and (max-width:640px) {
+            .nav-icon {
+                display: none;
+            }
+        }
     </style>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/891884d41a.js" crossorigin="anonymous"></script>
@@ -42,7 +48,7 @@
 <body>
     <header>
         <!-- Navbar styles-->
-        <div class="navbar bg-base-100 mx-auto px-28 py-12">
+        <div class="  navbar px-24  lg:mx-auto lg:px-28 lg:py-12">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -73,30 +79,40 @@
                 </ul>
             </div>
             <div class="navbar-end gap-4 ">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
+                <div class="nav-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
                 <a class="btn bg-button px-6 py-4 text-white font-manrope">Get Ticket</a>
             </div>
         </div>
         <!-- Banner styles-->
-        <div class="carousel w-full mx-auto px-28 py-12">
-            <div id="slide1" class="carousel-item relative w-full ">
-                <img src="Images/1.png" class="w-full " />
-                <div
-                    class="absolute flex justify-items-start transform -translate-y-1/2 left-8 right-5 -bottom-0 gap-4 ">
-                    <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+        <div class="carousel px-28 lg:w-full lg:mx-auto lg:px-28 lg:py-12">
+            <div id="slide1" class=" relative carousel-item flex flex-col  lg:relative lg:w-full  ">
+                <img src="Images/1.png" class=" pl-28 pr-72 py-4 w-1/2 lg:px-2 lg:w-full lg:p-1 " />
+                <div class="absolute top-32 left-64  lg:absolute lg:top-96 lg:left-10 lg:py-12">
+                    <a href="#slide4" class="btn btn-circle  bg-black text-white">❮</a>
                     <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
                 </div>
-                <div class="absolute  bottom-10   right-14 rounded-3xl ml-2 bg-black text-white ">
-                    <div class="flex-col w-96 p-8 h-48  hover:bg-gray-400">
+                <!-- <div class="absolute top-70  bottom-10 w-96 h-56 lg:top-70 lg:h-56 lg:px-4 lg:py-4  lg:w-1/2 lg:mx-12 lg:absolute lg:bottom-10 lg:left-30  lg:right-14 rounded-3xl ml-2 bg-black text-white ">
+                    <div class="  pl-28 flex-col lg:w-96 lg:p-8 lg:h-48 hover:bg-gray-400 lg:top-70   ">
                         <h2 class="font-semibold text-xl pb-4 font-manrope">Meet all the heroes from the field</h2>
                         <p class="font-manrope">Using algorithms, spreadsheets, statistics, and slide rules, I have
                             determined the best ice
                             hockey players ever. </p>
                     </div>
+                </div> -->
+                <div
+                    class="bottom-10 w-96 h-48 mx-28 py-8 px-8 lg:mx-1 lg:absolute lg:top-80 lg:right-8 lg:px-12 flex-col lg:w-6/12 lg:p-8 lg:h-48 rounded-xl bg-black hover:bg-gray-400 lg:top-70">
+                    <h2 class="font-semibold text-xl pb-4 font-manrope text-white">Meet all the heroes from the field
+                    </h2>
+                    <p class="font-manrope text-white">Using algorithms, spreadsheets, statistics, and slide rules, I
+                        have
+                        determined the best ice
+                        hockey players ever. </p>
                 </div>
             </div>
 
@@ -107,7 +123,7 @@
         <section class="py-16 mx-auto px-28 ">
             <!-- Title -->
             <div
-                class="justify-center items-center text-center border-dashed border-2 border-gray-200 border-t-gray-200  border-b-gray-200  border-l-white  border-r-white p-8">
+                class="justify-center items-center text-center border-dashed border-2 border-gray-200 border-t-gray-200  border-b-gray-200  border-l-white  border-r-white p-4">
                 <h2 class="font-extrabold text-4xl pb-6 font-manrope">Professional Hockeys Club</h2>
                 <p class="text-base font-manrope">That guys who play hockey know how to use their stick is a staple of
                     hockey dating jokes. But even
@@ -116,9 +132,9 @@
             </div>
         </section>
         <!-- Player ratings -->
-        <section class="py-4 mx-auto px-28">
-            <div class="flex  gap-8">
-                <div class="card w-80 bg-base-100  px-4 py-10 items-center text-center">
+        <section class="px-36 lg:py-4 lg:mx-auto lg:px-28">
+            <div class="flex flex-col lg:flex-row lg:gap-8">
+                <div class="card w-80 px-4 py-10 items-center text-center">
                     <div class="radial-progress text-[#ff4240]" style="--value:87 ;" role="progressbar">
                         <h2 class="text-black font-semibold text-xl">87%</h2>
                     </div>
@@ -126,7 +142,7 @@
                     <p>The 20,000 square-foot facility replaced the old 3,500 square-foot locker room and players.
                     </p>
                 </div>
-                <div class="card w-80 bg-base-100  px-4 py-10 items-center text-center">
+                <div class="card w-80 px-4 py-10 items-center text-center">
                     <div class="radial-progress text-[#49d293]" style="--value:95 ;" role="progressbar">
                         <h2 class="text-black font-semibold text-xl">95%</h2>
                     </div>
@@ -134,14 +150,14 @@
                     <p>A season of struggle beckons for an experienced coach who has recruited a string of players.
                     </p>
                 </div>
-                <div class="card w-80 bg-base-100  px-4 py-10 items-center text-center">
+                <div class="card w-80 px-4 py-10 items-center text-center">
                     <div class="radial-progress text-[#ffb546]" style="--value:90 ;" role="progressbar">
                         <h2 class="text-black font-semibold text-xl">90%</h2>
                     </div>
                     <h2 class="text-xl font-semibold p-4">Senior Player</h2>
                     <p>The total purse was the highest of any senior tour event until the 2023.</p>
                 </div>
-                <div class="card w-80 bg-base-100 px-4 py-10 items-center text-center">
+                <div class="card w-80 px-4 py-10 items-center text-center">
                     <div class="radial-progress text-[#4c8df1]" style="--value:80 ;" role="progressbar">
                         <h2 class="text-black font-semibold text-xl">80%</h2>
                     </div>
@@ -151,7 +167,7 @@
             </div>
         </section>
         <!-- Program Sections styles -->
-        <section class=" mx-auto px-28">
+        <section class=" lg:mx-auto lg:px-28">
             <!-- Title -->
             <div
                 class="justify-center items-center text-center py-16 mx-auto px-28 border-dashed border-2 border-gray-200 border-t-gray-200  border-b-gray-200  border-l-white  border-r-white p-8  ">
@@ -161,13 +177,12 @@
                     by a portfolio of our products and services.
                 </p>
             </div>
-            
         </section>
         <!-- Junior and Teenager styles -->
         <section>
-            <div class="flex justify-center gap-4 pt-16 mx-auto px-28">
+            <div class=" flex flex-col  lg:py-1 lg:flex-row lg:justify-center lg:gap-4 lg:pt-16 lg:mx-auto px-28">
                 <!-- Junior -->
-                <div class=" card bg-base-100 shadow-xl image-full w-100% ">
+                <div class=" mb-4 mt-8 lg:mt-0 card shadow-xl image-full w-100% lg:mb-0 ">
                     <figure><img src="Images/2.png" alt="Junior Program" /></figure>
                     <div class="card-body w-96">
                         <h2 class="card-title font-manrope pt-8 pb-4 ">Junior Program</h2>
@@ -177,14 +192,13 @@
                             needed, you can increase the number of reps, or add weights to some exercises if the
                             technique is not compromised.</p>
                         <div class="card-actions justify-start">
-                            <button
-                                class="btn bg-button px-6 py-4 text-white font-manrope border-transparent">Register
+                            <button class="btn bg-button px-6 py-4 text-white font-manrope border-transparent">Register
                                 Now!</button>
                         </div>
                     </div>
                 </div>
                 <!--Teenager-->
-                <div class="card  bg-base-100 shadow-xl image-full w-100% ">
+                <div class="card   shadow-xl image-full w-100% ">
                     <figure><img src="Images/3.png" alt="Shoes" /></figure>
                     <div class="card-body w-96">
                         <h2 class="card-title font-manrope pt-8 pb-4 ">Teenager Program</h2>
@@ -195,8 +209,7 @@
                             further.
                         </p>
                         <div class="card-actions justify-start">
-                            <button
-                                class="btn bg-button px-6 py-4 text-white font-manrope border-transparent">Register
+                            <button class="btn bg-button px-6 py-4 text-white font-manrope border-transparent">Register
                                 Now!</button>
                         </div>
                     </div>
@@ -204,8 +217,8 @@
             </div>
             <!-- Professional Program styles -->
             <div class="card image-full pt-4 mx-28">
-                <figure><img class="w-full " src="Images/4.png" alt="Professional Program" /></figure>
-                <div class="card-body text-left flex justify-start items-start pt-72">
+                <figure><img class="  lg:w-100%" src="Images/4.png" alt="Professional Program" /></figure>
+                <div class="card-body text-left flex justify-start items-start lg:pt-72">
                     <h2 class="card-title font-manrope pt-8 pb-4 ">Professional Program</h2>
                     <p>The level of performance of a team is set by the performance of its team members. <br> We
                         have
@@ -232,10 +245,11 @@
         </section>
         <!-- New products list and price details  -->
         <section>
-            <div class="grid grid-cols-2 gap-4 mx-auto px-28 pb-24">
-                <div class="hero  rounded-2xl border-solid border-2 border-gray-300 h-60">
+            <div class="grid  grid-col px-20 lg:grid-cols-2 lg:gap-4 lg:mx-auto lg:px-28 lg:pb-24">
+                <div
+                    class="hero mx-8  lg:mb-0 p-2 w-96 h-full lg:mx-0 lg:p-0 lg:w-full lg:h-60 rounded-2xl border-solid  border-2 border-gray-300 ">
                     <div class="hero-content flex-col lg:flex-row">
-                        <img src="Images/5.png" class="max-w-sm rounded-lg " />
+                        <img class="w-full lg:w-80" src="Images/5.png" class="max-w-sm rounded-lg " />
                         <!-- Box-1 -->
                         <div>
                             <div class="rating flex justify-start items-center gap-4">
@@ -247,7 +261,7 @@
                             <h1 class="text-xl font-bold">World Cup Flags Football</h1>
                             <p class="py-3">Tracksuit Jacket.Free delivery for Team INTERSPORT members at Relay Points
                                 and at home</p>
-                            <div class="flex gap-6 items-center ">
+                            <div class="flex flex-col lg:flex-row lg:gap-6 lg:items-center ">
                                 <h1 class="font-manrope text-xl font-bold text-button">Price - $22.00</h1>
                                 <div class="flex gap-2 items-center">
                                     <i class="fas fa-shopping-cart"></i>
@@ -259,9 +273,10 @@
                         <!-- box - 1 rating -->
                     </div>
                 </div>
-                <div class="hero  rounded-2xl border-solid border-2 border-gray-300 h-60">
+                <div
+                    class="hero mx-8 mt-4 p-2 w-96 h-full lg:mt-0 lg:mx-0 lg:p-0 lg:w-full lg:h-60 rounded-2xl border-solid border-2 border-gray-300">
                     <div class="hero-content flex-col lg:flex-row">
-                        <img src="Images/6.png" class="max-w-sm rounded-lg " />
+                        <img class="w-full lg:w-80" src="Images/6.png" class="max-w-sm rounded-lg " />
                         <!-- Box-1 -->
                         <div>
                             <div class="rating flex justify-start items-center gap-4">
@@ -274,7 +289,7 @@
                             <p class="py-3 font-manrope">Cheap price.Free delivery for Team INTERSPORT members at Relay
                                 Points
                                 and at home</p>
-                            <div class="flex gap-6 items-center ">
+                            <div class="flex flex-col lg:flex-row lg:gap-6 lg:items-center ">
                                 <h1 class="font-manrope text-xl font-bold text-button ">Price - $22.00</h1>
                                 <div class="flex gap-2 items-center">
                                     <i class="fas fa-shopping-cart"></i>
@@ -286,9 +301,10 @@
                         <!-- box - 1 rating -->
                     </div>
                 </div>
-                <div class="hero  rounded-2xl border-solid border-2 border-gray-300 h-60">
+                <div
+                    class="hero mx-8 mt-8  p-2 w-96 h-full lg:mt-0 lg:mx-0 lg:p-0 lg:w-full lg:h-60  rounded-2xl border-solid border-2 border-gray-300">
                     <div class="hero-content flex-col lg:flex-row">
-                        <img src="Images/7.png" class="max-w-sm rounded-lg " />
+                        <img class="w-full lg:w-80" src="Images/7.png" class="max-w-sm rounded-lg " />
                         <!-- Box-1 -->
                         <div>
                             <div class="rating flex justify-start items-center gap-4">
@@ -301,7 +317,7 @@
                             <p class="py-3 font-manrope">Cap for HockeysFree delivery for Team INTERSPORT members at
                                 Relay Points
                                 and at home</p>
-                            <div class="flex gap-6 items-center ">
+                            <div class="flex flex-col lg:flex-row lg:gap-6 lg:items-center ">
                                 <h1 class="font-manrope text-xl font-bold text-button">Price - $22.00</h1>
                                 <div class="flex gap-2 items-center">
                                     <i class="fas fa-shopping-cart"></i>
@@ -313,9 +329,10 @@
                         <!-- box - 1 rating -->
                     </div>
                 </div>
-                <div class="hero  rounded-2xl border-solid border-2 border-gray-300 h-60">
+                <div
+                    class="hero mx-8 mt-12 p-2 w-96 h-full lg:mt-0 lg:mx-0 lg:p-0 lg:w-full lg:h-60  rounded-2xl border-solid border-2 border-gray-300">
                     <div class="hero-content flex-col lg:flex-row">
-                        <img src="Images/8.png" class="max-w-sm rounded-lg " />
+                        <img class="w-full lg:w-80" src="Images/8.png" class="max-w-sm rounded-lg " />
                         <!-- Box-1 -->
                         <div>
                             <div class="rating flex justify-start items-center gap-4">
@@ -328,7 +345,7 @@
                             <p class="py-3 font-manrope">Beautiful T-shirt .Free delivery for Team INTERSPORT members at
                                 Relay Points
                                 and at home</p>
-                            <div class="flex gap-6 items-center ">
+                            <div class="flex flex-col lg:flex-row lg:gap-6 lg:items-center ">
                                 <h1 class="font-manrope text-xl font-bold text-button">Price - $22.00</h1>
                                 <div class="flex gap-2 items-center">
                                     <i class="fas fa-shopping-cart"></i>
@@ -340,9 +357,10 @@
                         <!-- box - 1 rating -->
                     </div>
                 </div>
-                <div class="hero  rounded-2xl border-solid border-2 border-gray-300 h-60">
+                <div
+                    class="hero mx-8 mt-16 p-2 w-96 h-full lg:mt-0 lg:mx-0 lg:p-0 lg:w-full lg:h-60 rounded-2xl border-solid border-2 border-gray-300">
                     <div class="hero-content flex-col lg:flex-row">
-                        <img src="Images/9.png" class="max-w-sm rounded-lg " />
+                        <img class="w-full lg:w-80" src="Images/9.png" class="max-w-sm rounded-lg " />
                         <!-- Box-1 -->
                         <div>
                             <div class="rating flex justify-start items-center gap-4">
@@ -355,7 +373,7 @@
                             <p class="py-3 font-manrope">Heavy Helmet.Free delivery for Team INTERSPORT members at Relay
                                 Points
                                 and at home</p>
-                            <div class="flex gap-6 items-center ">
+                            <div class="flex flex-col lg:flex-row lg:gap-6 lg:items-center">
                                 <h1 class="font-manrope text-xl font-bold text-button">Price - $22.00</h1>
                                 <div class="flex gap-2 items-center">
                                     <i class="fas fa-shopping-cart"></i>
@@ -367,9 +385,10 @@
                         <!-- box - 1 rating -->
                     </div>
                 </div>
-                <div class="hero  rounded-2xl border-solid border-2 border-gray-300 h-60">
+                <div
+                    class="hero mx-8 mt-20 p-2 w-96 h-full lg:mt-0 lg:mx-0 lg:p-0 lg:w-full lg:h-60 rounded-2xl border-solid border-2 border-gray-300">
                     <div class="hero-content flex-col lg:flex-row">
-                        <img src="Images/10.png" class="max-w-sm rounded-lg " />
+                        <img class="w-full lg:w-80" src="Images/10.png" class="max-w-sm rounded-lg " />
                         <!-- Box-1 -->
                         <div>
                             <div class="rating flex justify-start items-center gap-4">
@@ -382,7 +401,7 @@
                             <p class="py-3 font-manrope">World cup category.Free delivery for Team INTERSPORT members at
                                 Relay Points
                                 and at home</p>
-                            <div class="flex gap-6 items-center ">
+                            <div class="flex flex-col lg:flex-row lg:gap-6 lg:items-center">
                                 <h1 class="font-manrope text-xl font-bold text-button">Price - $22.00</h1>
                                 <div class="flex gap-2 items-center">
                                     <i class="fas fa-shopping-cart"></i>
@@ -397,7 +416,7 @@
             </div>
         </section>
         <!-- Client Question -->
-        <section class="pb-16 mx-auto px-28">
+        <section class="mb-8 mt-28 px-28 lg:mt-0 lg:pb-16 lg:mx-auto lg:px-28 lg:mb-0">
             <!-- title -->
             <div
                 class="justify-center items-center text-center border-dashed border-2 border-gray-200 border-t-gray-200  border-b-gray-200  border-l-white  border-r-white p-8 ">
@@ -409,7 +428,7 @@
             </div>
         </section>
         <!-- Faq Styles -->
-        <section class="mx-auto px-28 ">
+        <section class="mx-auto px-28 lg:mx-auto lg:px-28 ">
             <div class=" rounded-2xl border-solid border-2 border-gray-300 px-8  py-8">
                 <div class="flex flex-col lg:flex-row justify-between ">
                     <div class="w-full  ">
@@ -504,19 +523,20 @@
         <!-- Get in touch main section styles -->
         <section class="px-28 ">
             <!-- min-h-screen bg-base-200 rounded-lg -->
-            <div class=" flex">
-                <div class="font-manrope border-2 rounded-lg border-gray-200 border-t-gray-200 p-8 m-8 ">
-                    <div class="w-96 h-52 bg-[#bced6d1a] rounded-lg p-8 mb-4">
+            <div class=" flex flex-col lg:flex-row lg:px-0">
+                <div
+                    class="font-manrope px-3 pt-3 border-2 rounded-lg border-gray-200 border-t-gray-200 lg:p-8 lg:m-8 ">
+                    <div class="p-8 mb-4 w-96 h-52 bg-[#bced6d1a] rounded-lg lg:p-8 lg:mb-4">
                         <img class="pb-4" src="Images/Group 1171275317.png" alt="">
                         <h1>Phone Number:</h1>
                         <p class="font-bold">(+62) 123-321-543</p>
                     </div>
-                    <div class="w-96 h-52 bg-[#fddd5f1a] rounded-lg p-8 mb-4">
+                    <div class="p-8 mb-4 w-96 h-52 bg-[#fddd5f1a] rounded-lg lg:p-8 lg:mb-4">
                         <img class="pb-4" src="Images/Group 1171275318.png" alt="">
                         <h1>Email:</h1>
                         <p class="font-bold">hockeys@support.com</p>
                     </div>
-                    <div class="w-96 h-52 bg-[#629cf31a] rounded-lg p-8 mb-4">
+                    <div class="p-8 mb-4 w-96 h-52 bg-[#629cf31a] rounded-lg lg:p-8 lg:mb-4">
                         <img class="pb-4" src="Images/Group 1171275321.png" alt="">
                         <h1>Location:</h1>
                         <p class="font-bold">152/1 Mohakhali Wireless Gate</p>
@@ -527,65 +547,68 @@
                     <!-- card-body -->
                     <form class="">
                         <!-- Name and email -->
-                        <div class="flex gap-4 mt-8 ">
+                        <div class="flex flex-col lg:flex-row gap-4 mt-8 font-manrope ">
                             <div class="form-control ">
                                 <label class="label">
-                                    <span class="label-text">Your Name</span>
+                                    <span class="label-text text-2xl font-extrabold">Your Name</span>
                                 </label>
-                                <input type="email" placeholder="Enter your full name" class="input input-bordered box-border h-16 w-72 p-4 border-1 "
-                                    required />
+                                <input type="email" placeholder="Enter your full name"
+                                    class="input input-bordered box-border lg:h-16 lg:w-72 lg:p-4 border-1 " required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text">Your Email</span>
+                                    <span class="label-text text-2xl font-extrabold">Your Email</span>
                                 </label>
-                                <input type="email" placeholder="Enter your email" class="input input-bordered box-border h-16 w-72 p-4 border-1"
-                                    required />
+                                <input type="email" placeholder="Enter your email"
+                                    class="input input-bordered box-border lg:h-16 lg:w-72 lg:p-4 border-1" required />
                             </div>
                         </div>
                         <!-- Subject and phone number -->
-                        <div class="flex gap-4">
+                        <div class="flex  flex-col lg:flex-row gap-4 font-manrope">
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text">Subject</span>
+                                    <span class="label-text text-2xl font-extrabold">Subject</span>
                                 </label>
-                                <input type="password" placeholder="Enter your subject" class="input input-bordered box-border h-16 w-72 p-4 border-1"
-                                    required />
+                                <input type="password" placeholder="Enter your subject"
+                                    class="input input-bordered box-border lg:h-16 lg:w-72 lg:p-4 border-1" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text">Phone Number</span>
+                                    <span class="label-text text-2xl font-extrabold">Phone Number</span>
                                 </label>
                                 </label>
                                 <input type="password" placeholder="Enter your phone number "
-                                    class="input input-bordered box-border h-16 w-72 p-4 border-1" required />
+                                    class="input input-bordered box-border lg:h-16 lg:w-72 lg:p-4 border-1" required />
                             </div>
                         </div>
                         <!-- Message -->
-                        <div class="form-control ">
-                            <label class="form-control ">
+                        <div class="form-control font-manrope ">
+                            <label class="form-control  ">
                                 <div class="label">
-                                    <span class="label-text">Message</span>
+                                    <span class="label-text text-2xl font-extrabold">Message</span>
                                 </div>
                                 <div>
-                                    <textarea class="textarea textarea-bordered box-border  border-1"  rows="15" cols="84" 
+                                    <textarea
+                                        class="textarea textarea-bordered box-border  border-1 w-full h-64 lg:w-full lg:h-96"
                                         placeholder="Write your message"></textarea>
                                 </div>
                             </label>
                         </div>
                         <!-- form-control -->
                         <div class=" mt-1 ">
-                            <button class="btn bg-button text-white  font-manrope h-12 w-11/12 p-4"  >Send Message</button>
+                            <button
+                                class="btn bg-button text-white text-xl font-bold font-manrope h-12 w-full p-2 lg:h-12 lg:w-full lg:p-2">Send
+                                Message</button>
                         </div>
                     </form>
                 </div>
-               
+
             </div>
         </section>
         <!-- Social media styles-->
         <section class="mx-28 px-28 justify-center items-center text-center m-8 rounded-lg bg-[#13131808]">
             <div>
-                <h1 class="font-manrope text-2xl font-extrabold p-8 mb-1" >Social Media</h1>
+                <h1 class="font-manrope lg:text-2xl font-extrabold p-8 mb-1">Social Media</h1>
             </div>
             <div class="flex justify-center pb-8 gap-8">
                 <i class="fab fa-twitter"></i>
@@ -593,49 +616,52 @@
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-github"></i>
             </div>
-        </section>      
-        
+        </section>
+
     </main>
     <!-- footer styles -->
-    <footer class="bg-[#131318] font-manrope text-white mx-auto px-28 py-12 flex justify-around">
-        <div>
-            <h1 class="text-3xl font-semibold pb-4">Get in Touch</h1>
-            <p class="flex pb-4 text-[#ffffff99]">
-                We have developed the concept <br> of individual player training.</p>
-            <div class="flex items-center gap-2 pb-3">
-                <i class="far fa-envelope text-red-600"></i>
-                <h1 class="text-[#ffffff99]">hockeys@support.com</h1>
+    <footer class="px-32 pb-8 mx-auto bg-[#131318] font-manrope text-white lg:mx-auto lg:px-28 lg:py-12 lg:flex lg:justify-around">
+        <div class="grid lg:grid-cols-3 ">
+            <div class=" p-24 lg:pt-4 flex flex-col   ">
+                <h1 class="text-3xl font-semibold  lg:pb-4">Get in Touch</h1>
+                <p class="flex pb-4 text-center lg:text-left text-[#ffffff99]">
+                    We have developed the concept <br> of individual player training.</p>
+                <div class="flex items-center gap-2 pb-3">
+                    <i class="far fa-envelope text-red-600"></i>
+                    <h1 class="text-[#ffffff99]">hockeys@support.com</h1>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-phone-alt  text-red-600"></i>
+                    <h1 class="text-[#ffffff99]">(+62) 123-321-543</h1>
+                </div>
             </div>
-            <div class="flex items-center gap-2">
-                <i class="fas fa-phone-alt  text-red-600"></i>
-                <h1 class="text-[#ffffff99]">(+62) 123-321-543</h1>
+            <div class="flex  gap-32 ">
+                <div class="pt-4">
+                    <h1 class="text-xl pb-4">Company</h1>
+                    <h1 class="py-1 text-[#ffffff99]">About us</h1>
+                    <h1 class="py-1 text-[#ffffff99]">Leadership</h1>
+                    <h1 class="py-1 text-[#ffffff99]">Careers</h1>
+                    <h1 class="py-1 text-[#ffffff99]">News & Article</h1>
+                    <h1 class="py-1 text-[#ffffff99]">Legal Notice</h1>
+                </div>
+                <div class="pt-4 ">
+                    <h1 class="text-xl pb-4">Support</h1>
+                    <h1 class="py-1 text-[#ffffff99]">Help Center</h1>
+                    <h1 class="py-1 text-[#ffffff99]">FAQ</h1>
+                    <h1 class="py-1 text-[#ffffff99]">Ticket Support</h1>
+                    <h1 class="py-1 text-[#ffffff99]">Contact Us</h1>
+                </div>
+            </div>
+            <div class="pt-4 pl-32">
+                <h1 class="text-xl pb-4">Services</h1>
+                <h1 class="py-1 text-[#ffffff99]">Academy</h1>
+                <h1 class="py-1 text-[#ffffff99]">Group Lesson</h1>
+                <h1 class="py-1 text-[#ffffff99]">Private Lesson</h1>
+                <h1 class="py-1 text-[#ffffff99]">Hockeys for Kids</h1>
+                <h1 class="py-1 text-[#ffffff99]">Hockeys for Adult</h1>
             </div>
 
         </div>
-        <div>
-            <h1 class="text-xl pb-4">Company</h1>
-            <h1 class="py-1 text-[#ffffff99]">About us</h1>
-            <h1 class="py-1 text-[#ffffff99]">Leadership</h1>
-            <h1 class="py-1 text-[#ffffff99]">Careers</h1>
-            <h1 class="py-1 text-[#ffffff99]">News & Article</h1>
-            <h1 class="py-1 text-[#ffffff99]">Legal Notice</h1>
-        </div>
-        <div>
-            <h1 class="text-xl pb-4">Support</h1>
-            <h1 class="py-1 text-[#ffffff99]">Help Center</h1>
-            <h1 class="py-1 text-[#ffffff99]">FAQ</h1>
-            <h1 class="py-1 text-[#ffffff99]">Ticket Support</h1>
-            <h1 class="py-1 text-[#ffffff99]">Contact Us</h1>
-        </div>
-        <div>
-            <h1 class="text-xl pb-4">Services</h1>
-            <h1 class="py-1 text-[#ffffff99]">Academy</h1>
-            <h1 class="py-1 text-[#ffffff99]">Group Lesson</h1>
-            <h1 class="py-1 text-[#ffffff99]">Private Lesson</h1>
-            <h1 class="py-1 text-[#ffffff99]">Hockeys for Kids</h1>
-            <h1 class="py-1 text-[#ffffff99]">Hockeys for Adult</h1>
-        </div>
-        
     </footer>
 
 </body>
