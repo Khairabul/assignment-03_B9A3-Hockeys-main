@@ -48,7 +48,7 @@
 <body>
     <header>
         <!-- Navbar styles-->
-        <div class="  navbar px-24  lg:mx-auto lg:px-28 lg:py-12">
+        <div class="  navbar px-24  lg:mx-auto lg:px-32 lg:py-12">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -90,30 +90,51 @@
             </div>
         </div>
         <!-- Banner styles-->
-        <div class="carousel px-28 lg:w-full lg:mx-auto lg:px-28 lg:py-12">
-            <div id="slide1" class=" relative carousel-item flex flex-col  lg:relative lg:w-full  ">
-                <img src="Images/1.png" class=" pl-28 pr-72 py-4 w-1/2 lg:px-2 lg:w-full lg:p-1 " />
-                <div class="absolute top-32 left-64  lg:absolute lg:top-96 lg:left-10 lg:py-12">
-                    <a href="#slide4" class="btn btn-circle  bg-black text-white">❮</a>
+        <div class="carousel px-28 lg:mx-28 lg:px-0 lg:py-0">
+            <div id="slide1" class="carousel-item relative w-full  flex flex-col  lg:relative lg:w-full">
+                <div class="-ml-7 lg:m-auto">
+                    <img src="Images/1.png" class="pl-36 pr-56 py-4 w-8/12 lg:px-2 lg:w-full lg:p-1 " />
+                </div>
+                <div class="absolute top-28 left-72  lg:absolute lg:top-96 lg:left-10 lg:py-12">
+                    <a href="#slide2" class="btn btn-circle  bg-black text-white">❮</a>
                     <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
                 </div>
-                <!-- <div class="absolute top-70  bottom-10 w-96 h-56 lg:top-70 lg:h-56 lg:px-4 lg:py-4  lg:w-1/2 lg:mx-12 lg:absolute lg:bottom-10 lg:left-30  lg:right-14 rounded-3xl ml-2 bg-black text-white ">
-                    <div class="  pl-28 flex-col lg:w-96 lg:p-8 lg:h-48 hover:bg-gray-400 lg:top-70   ">
-                        <h2 class="font-semibold text-xl pb-4 font-manrope">Meet all the heroes from the field</h2>
-                        <p class="font-manrope">Using algorithms, spreadsheets, statistics, and slide rules, I have
+                <div class="ml-8">
+                    <div
+                        class="bottom-10 w-96 h-48 mx-28  py-8 px-8 lg:mx-1 lg:absolute lg:top-80 lg:right-8 lg:px-12 flex-col lg:w-6/12 lg:p-8 lg:h-48 rounded-xl bg-black hover:bg-gray-400 lg:top-70">
+                        <h2 class="font-semibold text-xl pb-4 font-manrope text-white">Meet all the heroes from the
+                            field
+                        </h2>
+                        <p class="font-manrope text-white">Using algorithms, spreadsheets, statistics, and slide rules,
+                            I
+                            have
                             determined the best ice
                             hockey players ever. </p>
                     </div>
-                </div> -->
-                <div
-                    class="bottom-10 w-96 h-48 mx-28 py-8 px-8 lg:mx-1 lg:absolute lg:top-80 lg:right-8 lg:px-12 flex-col lg:w-6/12 lg:p-8 lg:h-48 rounded-xl bg-black hover:bg-gray-400 lg:top-70">
-                    <h2 class="font-semibold text-xl pb-4 font-manrope text-white">Meet all the heroes from the field
-                    </h2>
-                    <p class="font-manrope text-white">Using algorithms, spreadsheets, statistics, and slide rules, I
-                        have
-                        determined the best ice
-                        hockey players ever. </p>
                 </div>
+            </div>
+            <div id="slide2" class="carousel-item w-full relative flex flex-col lg:relative  lg:w-full">
+                <div class="m-1 lg:m-auto">
+                    <img src="Images/1.png" class="pl-12 pr-96 py-4 w-8/12 lg:px-2 lg:w-full lg:p-1 " />
+                </div>
+                <div class="absolute top-28 left-48  lg:absolute lg:top-96 lg:left-10 lg:py-12">
+                    <a href="#slide1" class="btn btn-circle  bg-black text-white">❮</a>
+                    <a href="#slide1" class="btn btn-circle  bg-black text-white">❯</a>
+                </div>
+                <div class="-ml-20">
+                    <div
+                        class="bottom-10 w-96 h-48 mx-28 py-8 px-8 lg:mx-1 lg:absolute lg:top-80 lg:right-8 lg:px-12 flex-col lg:w-6/12 lg:p-8 lg:h-48 rounded-xl bg-black hover:bg-gray-400 lg:top-70">
+                        <h2 class="font-semibold text-xl pb-4 font-manrope text-white">Meet all the heroes from the
+                            field
+                        </h2>
+                        <p class="font-manrope text-white">Using algorithms, spreadsheets, statistics, and slide rules,
+                            I
+                            have
+                            determined the best ice
+                            hockey players ever. </p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -132,40 +153,68 @@
             </div>
         </section>
         <!-- Player ratings -->
-        <section class="px-36 lg:py-4 lg:mx-auto lg:px-28">
+        <section class="px-36 font-manrope lg:py-4 lg:mx-auto lg:px-28">
             <div class="flex flex-col lg:flex-row lg:gap-8">
                 <div class="card w-80 px-4 py-10 items-center text-center">
-                    <div class="radial-progress text-[#ff4240]" style="--value:87 ;" role="progressbar">
-                        <h2 class="text-black font-semibold text-xl">87%</h2>
-                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 120 120" fill="none">
+                        <path
+                            d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                            fill="#E7E7E8" />
+                        <path
+                            d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z"
+                            fill="#FF4240" />
+                        <text class="text-2xl text-black" x="50%" y="50%" text-anchor="middle" stroke="black"
+                            stroke-width="2px" dy=".3em">87%</text>
+                    </svg>
                     <h2 class="text-xl font-semibold p-4">Prayer Facility</h2>
                     <p>The 20,000 square-foot facility replaced the old 3,500 square-foot locker room and players.
                     </p>
                 </div>
                 <div class="card w-80 px-4 py-10 items-center text-center">
-                    <div class="radial-progress text-[#49d293]" style="--value:95 ;" role="progressbar">
-                        <h2 class="text-black font-semibold text-xl">95%</h2>
-                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 120 120" fill="none">
+                        <path
+                            d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                            fill="#E7E7E8" />
+                        <path
+                            d="M114.266 60C117.433 60 120.028 57.4266 119.726 54.274C118.506 41.5436 113.241 29.4793 104.626 19.8933C94.7273 8.87961 81.1057 1.91535 66.3817 0.340346C51.6576 -1.23466 36.8712 2.69086 24.8672 11.3617C12.8632 20.0325 4.48966 32.836 1.35752 47.3091C-1.77461 61.7821 0.55594 76.9021 7.90081 89.7603C15.2457 102.618 27.086 112.306 41.1438 116.96C55.2016 121.614 70.4837 120.905 84.0501 114.969C95.858 109.803 105.64 100.995 112.015 89.9081C113.593 87.1625 112.294 83.7461 109.41 82.4366C106.526 81.1272 103.155 82.426 101.515 85.1352C96.3546 93.6587 88.6662 100.431 79.4529 104.462C68.4798 109.263 56.1188 109.836 44.7481 106.072C33.3775 102.308 23.8005 94.4719 17.8596 84.0716C11.9187 73.6713 10.0336 61.4414 12.567 49.7349C15.1005 38.0284 21.8734 27.6723 31.5828 20.6589C41.2923 13.6455 53.2523 10.4704 65.1618 11.7443C77.0714 13.0182 88.0892 18.6513 96.0955 27.5597C102.818 35.0393 107.018 44.3841 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z"
+                            fill="#49D293" />
+                        <text class="text-2xl text-black" x="50%" y="50%" text-anchor="middle" stroke="black"
+                            stroke-width="2px" dy=".3em">95%</text>
+                    </svg>
                     <h2 class="text-xl font-semibold p-4">Experienced Coach</h2>
                     <p>A season of struggle beckons for an experienced coach who has recruited a string of players.
                     </p>
                 </div>
-                <div class="card w-80 px-4 py-10 items-center text-center">
-                    <div class="radial-progress text-[#ffb546]" style="--value:90 ;" role="progressbar">
-                        <h2 class="text-black font-semibold text-xl">90%</h2>
-                    </div>
+                <div class="card w-80 px-4 py-10 items-center text-center">                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 120 120" fill="none">
+                        <path
+                            d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                            fill="#E7E7E8" />
+                        <path
+                            d="M110.134 80.7677C113.06 81.9797 116.443 80.5956 117.371 77.5673C120.973 65.8033 120.885 53.165 117.038 41.3814C112.596 27.7733 103.435 16.2017 91.2094 8.75578C78.9837 1.30986 64.4986 -1.51971 50.3695 0.777937C36.2403 3.07558 23.3982 10.349 14.1616 21.2851C4.92507 32.2212 -0.0972474 46.0992 0.00142546 60.4136C0.100098 74.728 5.31326 88.5355 14.6997 99.3431C24.0862 110.151 37.0273 117.247 51.1868 119.349C63.4479 121.17 75.9229 119.143 86.9184 113.623C89.7488 112.202 90.5474 108.635 88.8628 105.953C87.1783 103.271 83.6496 102.497 80.7878 103.854C72.1379 107.954 62.4244 109.423 52.8714 108.005C41.4186 106.304 30.9511 100.565 23.3589 91.8227C15.7666 83.0809 11.55 71.9127 11.4702 60.3345C11.3903 48.7563 15.4526 37.5311 22.9236 28.6854C30.3946 19.8398 40.782 13.9567 52.2103 12.0982C63.6387 10.2398 75.3549 12.5285 85.2438 18.5511C95.1326 24.5737 102.542 33.9334 106.135 44.9403C109.132 54.1213 109.309 63.9437 106.713 73.1577C105.855 76.2061 107.208 79.5556 110.134 80.7677Z"
+                            fill="#FFB546" />
+                        <text class="text-2xl text-black" x="50%" y="50%" text-anchor="middle" stroke="black"
+                            stroke-width="2px" dy=".3em">90%</text>
+                    </svg>
                     <h2 class="text-xl font-semibold p-4">Senior Player</h2>
                     <p>The total purse was the highest of any senior tour event until the 2023.</p>
                 </div>
-                <div class="card w-80 px-4 py-10 items-center text-center">
-                    <div class="radial-progress text-[#4c8df1]" style="--value:80 ;" role="progressbar">
-                        <h2 class="text-black font-semibold text-xl">80%</h2>
-                    </div>
+                <div class="card w-80 px-4 py-10 items-center text-center">                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 120 120" fill="none">
+                        <path
+                            d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                            fill="#E7E7E8" />
+                        <path
+                            d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z"
+                            fill="#4C8DF1" />
+                        <text class="text-2xl text-black" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="2px"
+                            dy=".3em">80%</text>
+                    </svg>
                     <h2 class="text-xl font-semibold p-4">Training Ground</h2>
                     <p>The main product of our company is hockey diagnostic training centers,technologies. </p>
                 </div>
             </div>
-        </section>
+        </section>    
         <!-- Program Sections styles -->
         <section class=" lg:mx-auto lg:px-28">
             <!-- Title -->
@@ -220,7 +269,8 @@
                 <figure><img class="  lg:w-100%" src="Images/4.png" alt="Professional Program" /></figure>
                 <div class="card-body text-left flex justify-start items-start lg:pt-72">
                     <h2 class="card-title font-manrope pt-8 pb-4 ">Professional Program</h2>
-                    <p>The level of performance of a team is set by the performance of its team members. <br> We
+                    <p class="font-manrope">The level of performance of a team is set by the performance of its team
+                        members. <br> We
                         have
                         developed the concept of individual player training. <br>We support this training by a
                         portfolio
@@ -245,7 +295,7 @@
         </section>
         <!-- New products list and price details  -->
         <section>
-            <div class="grid  grid-col px-20 lg:grid-cols-2 lg:gap-4 lg:mx-auto lg:px-28 lg:pb-24">
+            <div class="grid  grid-col mx-4 px-20 font-manrope lg:grid-cols-2 lg:gap-4 lg:mx-auto lg:px-28 lg:pb-24 ">
                 <div
                     class="hero mx-8  lg:mb-0 p-2 w-96 h-full lg:mx-0 lg:p-0 lg:w-full lg:h-60 rounded-2xl border-solid  border-2 border-gray-300 ">
                     <div class="hero-content flex-col lg:flex-row">
@@ -522,7 +572,6 @@
         </section>
         <!-- Get in touch main section styles -->
         <section class="px-28 ">
-            <!-- min-h-screen bg-base-200 rounded-lg -->
             <div class=" flex flex-col lg:flex-row lg:px-0">
                 <div
                     class="font-manrope px-3 pt-3 border-2 rounded-lg border-gray-200 border-t-gray-200 lg:p-8 lg:m-8 ">
@@ -542,7 +591,6 @@
                         <p class="font-bold">152/1 Mohakhali Wireless Gate</p>
                     </div>
                 </div>
-                <!-- card  w-full shadow-2xl max-w-sm -->
                 <div class="bg-base-100 ">
                     <!-- card-body -->
                     <form class="">
@@ -553,14 +601,14 @@
                                     <span class="label-text text-2xl font-extrabold">Your Name</span>
                                 </label>
                                 <input type="email" placeholder="Enter your full name"
-                                    class="input input-bordered box-border lg:h-16 lg:w-72 lg:p-4 border-1 " required />
+                                    class="input  bg-[#13131808] lg:h-16 lg:w-72 lg:p-4 border-1 " required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text text-2xl font-extrabold">Your Email</span>
                                 </label>
                                 <input type="email" placeholder="Enter your email"
-                                    class="input input-bordered box-border lg:h-16 lg:w-72 lg:p-4 border-1" required />
+                                    class="input  bg-[#13131808] lg:h-16 lg:w-72 lg:p-4 border-1" required />
                             </div>
                         </div>
                         <!-- Subject and phone number -->
@@ -570,7 +618,7 @@
                                     <span class="label-text text-2xl font-extrabold">Subject</span>
                                 </label>
                                 <input type="password" placeholder="Enter your subject"
-                                    class="input input-bordered box-border lg:h-16 lg:w-72 lg:p-4 border-1" required />
+                                    class="input  bg-[#13131808] lg:h-16 lg:w-72 lg:p-4 border-1" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
@@ -578,7 +626,7 @@
                                 </label>
                                 </label>
                                 <input type="password" placeholder="Enter your phone number "
-                                    class="input input-bordered box-border lg:h-16 lg:w-72 lg:p-4 border-1" required />
+                                    class="input  bg-[#13131808] lg:h-16 lg:w-72 lg:p-4 border-1" required />
                             </div>
                         </div>
                         <!-- Message -->
@@ -588,8 +636,7 @@
                                     <span class="label-text text-2xl font-extrabold">Message</span>
                                 </div>
                                 <div>
-                                    <textarea
-                                        class="textarea textarea-bordered box-border  border-1 w-full h-64 lg:w-full lg:h-96"
+                                    <textarea class="textarea  bg-[#13131808] w-full h-64 lg:w-full lg:h-96"
                                         placeholder="Write your message"></textarea>
                                 </div>
                             </label>
@@ -617,26 +664,26 @@
                 <i class="fab fa-github"></i>
             </div>
         </section>
-
     </main>
     <!-- footer styles -->
-    <footer class="px-32 pb-8 mx-auto bg-[#131318] font-manrope text-white lg:mx-auto lg:px-28 lg:py-12 lg:flex lg:justify-around">
+    <footer
+        class="px-32 pb-8 mx-auto bg-[#131318] font-manrope text-white lg:mx-auto lg:px-28 lg:py-12 lg:flex lg:justify-around">
         <div class="grid lg:grid-cols-3 ">
-            <div class=" p-24 lg:pt-4 flex flex-col   ">
-                <h1 class="text-3xl font-semibold  lg:pb-4">Get in Touch</h1>
+            <div class=" px-24 py-16 lg:pt-4 flex flex-col   ">
+                <h1 class="text-3xl font-semibold text-center lg:text-left lg:pb-4">Get in Touch</h1>
                 <p class="flex pb-4 text-center lg:text-left text-[#ffffff99]">
-                    We have developed the concept <br> of individual player training.</p>
+                    We have developed the concept of individual player training.</p>
                 <div class="flex items-center gap-2 pb-3">
                     <i class="far fa-envelope text-red-600"></i>
                     <h1 class="text-[#ffffff99]">hockeys@support.com</h1>
                 </div>
-                <div class="flex items-center gap-2">
+                <div class="flex justify-center text-center lg:justify-start lg:items-center gap-2">
                     <i class="fas fa-phone-alt  text-red-600"></i>
                     <h1 class="text-[#ffffff99]">(+62) 123-321-543</h1>
                 </div>
             </div>
             <div class="flex  gap-32 ">
-                <div class="pt-4">
+                <div class="lg:pt-4 text-center lg:text-left">
                     <h1 class="text-xl pb-4">Company</h1>
                     <h1 class="py-1 text-[#ffffff99]">About us</h1>
                     <h1 class="py-1 text-[#ffffff99]">Leadership</h1>
@@ -644,7 +691,7 @@
                     <h1 class="py-1 text-[#ffffff99]">News & Article</h1>
                     <h1 class="py-1 text-[#ffffff99]">Legal Notice</h1>
                 </div>
-                <div class="pt-4 ">
+                <div class="lg:pt-4 text-center lg:text-left">
                     <h1 class="text-xl pb-4">Support</h1>
                     <h1 class="py-1 text-[#ffffff99]">Help Center</h1>
                     <h1 class="py-1 text-[#ffffff99]">FAQ</h1>
@@ -652,8 +699,8 @@
                     <h1 class="py-1 text-[#ffffff99]">Contact Us</h1>
                 </div>
             </div>
-            <div class="pt-4 pl-32">
-                <h1 class="text-xl pb-4">Services</h1>
+            <div class="pt-8 lg:pt-4  lg:pl-32 text-center lg:text-left">
+                <h1 class="pb-4 text-xl lg:pb-4">Services</h1>
                 <h1 class="py-1 text-[#ffffff99]">Academy</h1>
                 <h1 class="py-1 text-[#ffffff99]">Group Lesson</h1>
                 <h1 class="py-1 text-[#ffffff99]">Private Lesson</h1>
